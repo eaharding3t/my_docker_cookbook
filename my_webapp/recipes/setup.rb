@@ -1,4 +1,4 @@
 package "docker" do
-	package_name "lxc-docker-0.9.0"
-	action :install
+	package_name "docker.io"
+	action :sudo apt-get install
 end
