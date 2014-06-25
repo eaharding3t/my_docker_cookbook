@@ -1,4 +1,4 @@
-node [:my_apps].each do |name,image|
+node[:my_apps].each do |name,image|
 	script "pull_app_#{name}_image" do
 		interpreter "bash"
 		user "root"
