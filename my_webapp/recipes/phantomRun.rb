@@ -1,5 +1,5 @@
 filename = "loadTest.js"
 execute 'execute_phantom' do
 	cwd '/home/~'
-	command 'phantom #{filename}'
+	command 'phantomjs #{filename}'
 end
