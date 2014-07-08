@@ -1,5 +1,5 @@
 filename = "loadTest.js"
-execute 'execute_phantom' do
-	cwd '/home/ec2-user'
-	command 'phantomjs loadTest.js node[:values][:numOfScriptExecutesRequested] node[:values][:adressToTest] node[:values][:queriesToRun] node[:values][:requestInterval] node[:values][:commands]'
+execute 'execute_loadTest' do
+	cwd '/local/'
+	command 'sudo phantomjs loadTest.js node[:adress] node[:repeat] node[:spacing] node[:jsToRun]'
 end
